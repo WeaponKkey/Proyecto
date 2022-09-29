@@ -34,7 +34,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <?php require 'partials/header.php' ?>
+
+  <div class="brand">
+          <a href="/proyect/index.php">
+            <h1><span>W</span>eapon <span>K</span>key</h1>
+          </a>
+  </div>
 
     <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
