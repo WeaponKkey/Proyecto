@@ -3,9 +3,13 @@
 
   $message = '';
 
-  if (!empty($_POST['email']) && !empty($_POST['usuario']) && !empty($_POST['password'])) {
-    $sql = "INSERT INTO users (email, usuario,password) VALUES (:email, :usuario, :password)";
+  if (!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['nacionalidad']) && !empty($_POST['dni']) && !empty($_POST['usuario']) && !empty($_POST['password'])) {
+    $sql = "INSERT INTO users (nombre, apellido, nacionalidad,dni, email, usuario,password) VALUES (:nombre, :apellido, :nacionalidad, :dni, :email, :usuario, :password)";
     $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':nombre', $_POST['nombre']);
+    $stmt->bindParam(':apellido', $_POST['apellido']);
+    $stmt->bindParam(':nacionalidad', $_POST['nacionalidad']);
+    $stmt->bindParam(':dni', $_POST['dni']);
     $stmt->bindParam(':email', $_POST['email']);
     $stmt->bindParam(':usuario', $_POST['usuario']);
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -42,6 +46,10 @@
     <span>o <a href="login.php">Iniciar sesion</a></span>
 
     <form action="signup.php" method="POST">
+      <input name="nombre" type="text" placeholder="Introduce tu nombre">
+      <input name="apellido" type="text" placeholder="Introduce tu apellido">
+      <input name="nacionalidad" type="text" placeholder="Introduce de que pais eres">
+      <input name="dni" type="text" placeholder="Introduce tu dni">
       <input name="email" type="text" placeholder="Introduce tu email">
       <input name="usuario" type="text" placeholder="Introduce tu nombre de usuario">
       <input name="password" type="password" placeholder="Introduce tu contraseña">

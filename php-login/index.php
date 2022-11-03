@@ -33,7 +33,7 @@
   </div>
 
     <?php if(!empty($user)): ?>
-      <br> Bienvenido <?= $user['usuario']; ?>
+      <br> Bienvenido <?= $user['usuario'];?>
       
 
 
@@ -42,7 +42,7 @@
 
       <br>
       <br> Presione este boton si quiere acceder para comprar los productos
-      <br> <a href="">Compras</a>
+      <br> <a href="/Fil/index.php">Compras</a>
 
       <br>
       <br>

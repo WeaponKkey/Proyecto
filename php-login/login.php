@@ -1,5 +1,4 @@
 <?php
-
   session_start();
 
   if (isset($_SESSION['user_id'])) {
@@ -15,6 +14,7 @@
 
     $message = '';
 
+  
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
       header("Location: /php-login");
@@ -41,17 +41,20 @@
           </a>
   </div>
 
-    <?php if(!empty($message)): ?>
-      <p> <?= $message ?></p>
-    <?php endif; ?>
 
     <h1>Iniciar sesion</h1>
     <span>o <a href="signup.php">Registrarse</a></span>
+
+
 
     <form action="login.php" method="POST">
       <input name="email" type="text" placeholder="Introduce tu email">
       <input name="password" type="password" placeholder="Introduce tu contraseña">
       <input type="submit" value="Enviar">
     </form>
+
+
+
+
   </body>
 </html>
