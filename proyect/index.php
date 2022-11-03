@@ -23,12 +23,12 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Games</a></li>
+            <li><a href="#hero" data-after="Hogar">Hogar</a></li>
+            <li><a href="#services" data-after="Servicios">Servicios</a></li>
+            <li><a href="#projects" data-after="Juegos">Juegos</a></li>
             <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-            <li><a href="/php-login/login.php" data-after="Login">Login</a></li>
+            <li><a href="#contact" data-after="Contacto">Contacto</a></li>
+            <li><a href="/php-login/login.php" data-after="Login">Iniciar sesion</a></li>
           </ul>
         </div>
       </div>
