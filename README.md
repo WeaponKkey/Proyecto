@@ -10,4 +10,4 @@ WeaponKkey es una web dinamica enfocada a la venta de artículos esteticos, de m
 Volvemos a agradecer el tiempo prestado que le dieron a WeaponKkey, esperamos que el sistema sea acorde a lo que buscan y que podamos trabajar con ustede en un futuro cercano.
 
 Nota:
-Momentaneamente la pagina funciona con phpmyadmin como servidor, para utilizarla se recomienda que intale XAMPP, coloque la carpeta base en la carpeta raiz del sistema llamada "htdocs" hubicada en la ruta "C:\xampp\htdocs", instalar la base de datos dentro de la pagina phpmyadmin y ejecutar la pagina en el...
+Momentaneamente la pagina funciona con phpmyadmin como servidor, para utilizarla se recomienda que intale XAMPP, coloque la carpeta base en la carpeta raiz del sistema llamada "htdocs" hubicada en la ruta "C:\xampp\htdocs", instalar la base de datos dentro de la pagina phpmyadmin y ejecutar la pagina en el navegador bajo la siguiente url :"http://localhost/Proyecto/Pagina/proyect/index.php"
