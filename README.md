@@ -1,7 +1,7 @@
 ---
 title: Carta de presentacion
 ---
-Querida empresa: 
+Estimada empresa: 
 
 WeaponKkey agradece el tiempo que han decidido prestarle a nuestro producto, esperamos que WeaponKkey sea de su agrado y que la propuesta logre que mantengamos el contacto a futuro con fin de darle vida a mas proyectos.
 
